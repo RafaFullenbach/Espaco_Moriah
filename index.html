@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Faça um orçamento</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@1&family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Espaço Moriah</h1>
+        <p>Chegou a hora de realizar seus sonhos! </p>
+
+      </header>
+
+      <form id="my-form">
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Informações pessoais</legend>
+
+            <div class="input-wrapper">
+              <label for="budget-name">Nome</label>
+              <input type="text" id="budget-name" required/>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="budget-email"
+                >Email <span>(digite um email válido)</span></label
+              >
+              <input type="email" id="budget-email" required />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="budget-phone">Telefone <span>(somente números)</label>
+              <input type="number" id="budget-phone" required/>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="fieldset-wrapper">
+              <legend>Informações do evento</legend>
+  
+              <div class="input-wrapper">
+                <label for="budget-name">Tipo do evento</label>
+                <select id="budget-name">
+                    <option>Aluguel salão</option>
+                    <option>Casamento</option>
+                    <option>Degustação</option>
+                    <option>Debutante</option>
+                </select>
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="budget-info"
+                  >Mensagem <span>(deixe uma mensagem para nós)</span></label
+                >
+                <textarea  id="budget-info"></textarea>
+              </div>
+            </div>
+          </fieldset>
+      </form>
+
+      <footer>
+        <input form="my-form" type="submit" class="button" value="Enviar">
+      </footer>
+    </div>
+  </body>
+</html>
